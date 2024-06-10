@@ -1,0 +1,54 @@
+.container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.rhombus {
+    width: 400px;
+    height: 400px;
+    background-color: #111821;
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.rhombus-front {
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(80deg);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.rhombus-back {
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%) rotate(80deg);
+    background-color: #4D79FF;
+    z-index: 1;
+}
+
+.profile {
+    transform: rotate(-90deg);
+    position: relative;
+    left:23px;
+    width: 230px;
+    /* Adjust the width as needed */
+    height: 350px;
+    /* Adjust the height as needed */
+    overflow: hidden;
+    /* Ensure the image stays within the rhombus */
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the entire rhombus area */
+}
