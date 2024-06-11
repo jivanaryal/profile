@@ -6,7 +6,7 @@ const About = () => {
       <h1 className=" text-center md:text-7xl text-5xl">About Me</h1>
       <div className="  px-6">
         <div className="md:grid md:grid-cols-12 gap-10 pt-24 ">
-          <div className="border-mainColor border-4 w-fit md:ml-0 ml-10 md:col-span-5 col-span-full  md:max-h-[500px] max-h-[300px]   mb-6">
+          <div className="border-mainColor border-4 w-fit md:ml-0 ml-10 md:col-span-5 col-span-full  md:max-h-[500px] overflow-hidden max-h-[300px]   mb-6">
             <img
               src={myPhoto}
               alt="Jivan Aryal"
