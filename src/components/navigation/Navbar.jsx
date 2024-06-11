@@ -30,7 +30,7 @@ const Navbar = ({ show, sidebar, setSideBar }) => {
     window.scrollTo({ behavior: "smooth", top: value });
   };
   return (
-    <div className="pt-6">
+    <div className="pt-6 w-[90%] mx-auto">
       <div className="flex  items-center gap-32 w-full">
         <h1 className=" text-mainColor w-[300px]">
           <img src={logo} alt="" />

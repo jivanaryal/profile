@@ -6,11 +6,11 @@ const About = () => {
       <h1 className=" text-center md:text-7xl text-5xl">About Me</h1>
       <div className="  px-6">
         <div className="md:grid md:grid-cols-12 gap-10 pt-24 ">
-          <div className="border-mainColor border-4 w-fit md:ml-0 ml-10 md:col-span-5 col-span-full  md:max-h-[500px] max-h-[300px] overflow-auto mb-6">
+          <div className="border-mainColor border-4 w-fit md:ml-0 ml-10 md:col-span-5 col-span-full  md:max-h-[500px] max-h-[300px]   mb-6">
             <img
               src={myPhoto}
               alt="Jivan Aryal"
-              className="rounded-lg  h-full transform transition-transform duration-500 hover:scale-105"
+              className="rounded-lg  h-full w-full transform transition-transform duration-500 hover:scale-105"
             />
           </div>
           <div className=" flex flex-col  gap-4 md:col-span-6 col-span-full  md:text-[1.5rem] text-[1rem]">
