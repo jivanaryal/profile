@@ -1,5 +1,8 @@
 import logo from "../../assets/images/logo.png";
-const Navbar = () => {
+import { VscMenu } from "react-icons/vsc";
+// import Sidebar from "./Sidebar";
+const Navbar = ({ show, sidebar, setSideBar }) => {
+  console.log(show);
   const NavData = [
     {
       name: "about",
@@ -35,9 +38,11 @@ const Navbar = () => {
         <div className="flex w-full justify-evenly items-center">
           {NavData.map((val, i) => {
             return (
-              <div key={i} className="">
+              <div key={i}>
                 <div
-                  className="capitalize text-xl cursor-pointer"
+                  className={`${
+                    show ? "hidden" : "visible"
+                  } capitalize text-xl cursor-pointer`}
                   onClick={() => CursorPointer(val.value)}
                 >
                   {val.name}
@@ -46,6 +51,14 @@ const Navbar = () => {
             );
           })}
         </div>
+      </div>
+      <div
+        className="absolute right-10 top-5 text-3xl"
+        onClick={() => {
+          setSideBar(!sidebar);
+        }}
+      >
+        {show && <VscMenu />}
       </div>
     </div>
   );

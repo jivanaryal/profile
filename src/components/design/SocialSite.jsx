@@ -15,7 +15,7 @@ const SocialSite = () => {
   ];
 
   return (
-    <div>
+    <div className="md:block hidden">
       <div>
         {SocialSite.map((val, i) => {
           return (

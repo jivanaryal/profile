@@ -1,21 +1,47 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/navigation/Navbar";
 import SocialSite from "../components/design/SocialSite";
+import { useState, useEffect } from "react";
+import Sidebar from "../components/navigation/Sidebar";
 
 const Layout = () => {
+  const [show, setShow] = useState(window.innerWidth < 850);
+  const [sidebar, setSideBar] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShow(window.innerWidth < 850);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div>
-      <div className="fixed bottom-[178px]">
-        <SocialSite />
-      </div>
-      <div className="w-[87%] mx-auto">
+    <div className="">
+      {sidebar ? (
         <div>
-          <Navbar />
+          <Navbar show={show} sidebar={sidebar} setSideBar={setSideBar} />
+          <Sidebar sidebar={sidebar} setSideBar={setSideBar} />
         </div>
+      ) : (
         <div>
-          <Outlet />
+          <div className="fixed bottom-[178px]">
+            <SocialSite />
+          </div>
+          <div className="w-[87%] mx-auto">
+            <div>
+              <Navbar show={show} sidebar={sidebar} setSideBar={setSideBar} />
+            </div>
+            <div>
+              <Outlet />
+            </div>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

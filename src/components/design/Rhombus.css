@@ -1,12 +1,12 @@
 .container {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
 
 .rhombus {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     background-color: #111821;
     transform: rotate(45deg);
     position: absolute;
@@ -38,9 +38,9 @@
     transform: rotate(-90deg);
     position: relative;
     left:23px;
-    width: 230px;
+    width: 180px;
     /* Adjust the width as needed */
-    height: 350px;
+    height: 300px;
     /* Adjust the height as needed */
     overflow: hidden;
     /* Ensure the image stays within the rhombus */
