@@ -61,7 +61,7 @@ const Sidebar = ({ sidebar, setSideBar }) => {
         return (
           <motion.div
             key={i}
-            className="cursor-pointer mb-10 w-40 h-full mt-10  text-white p-4  rounded-md shadow-md relative border-2 w-64 ml-[-25px] capitalize py-3 text-center text-xl border-gray-600 rounded-md"
+            className="cursor-pointer mb-10  h-full mt-10  text-white p-4  rounded-md shadow-md relative border-2 w-64 ml-[-25px] capitalize py-3 text-center text-xl border-gray-600 rounded-md"
             onClick={() => {
               CursorPointer(val.value);
             }}
@@ -74,7 +74,7 @@ const Sidebar = ({ sidebar, setSideBar }) => {
         );
       })}
 
-      <div className="flex items-center gap-5 relative mt-44">
+      <div className="flex items-center gap-5 mt-20  ">
         <hr className="w-5/12 border-b-4" />
         <div className="flex items-center">
           {socialSites.map((val, i) => {

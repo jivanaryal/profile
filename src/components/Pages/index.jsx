@@ -9,7 +9,7 @@ const Index = () => {
   return (
     <div>
       <ProfileIntro />
-      {/* <About /> */}
+      <About />
       <Projects />
       <Skills />
       <WantTo />
