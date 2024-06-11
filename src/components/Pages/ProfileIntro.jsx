@@ -2,7 +2,7 @@ import Rhombus from "../design/Rhombus";
 
 const ProfileIntro = () => {
   return (
-    <div className="md:grid  md:grid-cols-12 min-h-screen pt-20 md:text-[1.5rem] text-[1rem] md:gap-4 gap-10">
+    <div className="md:grid  md:grid-cols-12 min-h-screen md:pt-20 pt-10 md:text-[1.5rem] text-[1rem] md:gap-4 gap-10">
       <div className="col-span-7  flex flex-col gap-3">
         <p className="text-[#a19292ee]">Hello! I am</p>
         <h1>Jivan Aryal</h1>
@@ -15,7 +15,7 @@ const ProfileIntro = () => {
           collaboration opportunities.
         </p>
       </div>
-      <div className=" md:col-span-5  mx-auto md:mt-0 my-20">
+      <div className=" md:col-span-5  mx-auto md:mt-0 md:my-20 my-10">
         <Rhombus />
       </div>
     </div>

@@ -83,15 +83,18 @@ const Projects = () => {
   return (
     <div className="min-h-screen pt-20 ">
       <div>
-        <h1 className="text-7xl text-center">Projects</h1>
-        <div className="flex flex-col gap-16">
+        <h1 className="md:text-7xl text-5xl text-center">Projects</h1>
+        <div className="flex flex-col md:gap-14 gap-4">
           {ProjectData.map((val, i) => {
             return (
-              <div key={i} className="md:grid  md:grid-cols-12 gap-10 pt-24">
+              <div
+                key={i}
+                className="md:grid  md:grid-cols-12 md:gap-10 gap-4 pt-24"
+              >
                 <div className="left-image md:col-span-6 col-span-full w-full bg-red-500 max-h-[300px] md:mb-2 mb-6 ">
                   <img src={val.image} alt="" className="h-full w-full" />
                 </div>
-                <div className="right flex flex-col gap-4 md:col-span-6 col-span-full md:text-[1.5rem] text-[1rem] ">
+                <div className="right flex flex-col md:gap-4 gap-2 md:col-span-6 col-span-full md:text-[1.5rem] text-[1rem] ">
                   <div className="md:text-4xl text-3xl capitalize">
                     {val.header}
                   </div>
@@ -109,7 +112,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                     >
                       {" "}
-                      <div className="border-2 border-mainColor text-mainColor flex items-center gap-2 px-4 py-2 capitalize">
+                      <div className="border-2 border-mainColor md:text-lg text-base text-mainColor flex items-center gap-2 md:px-4 md:py-2 px-3 py-1 capitalize">
                         <RiLiveLine />
                         <button
                           className={`${
@@ -125,7 +128,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <div className="border-2 border-mainColor text-mainColor flex items-center gap-2 px-4 py-2 capitalize">
+                      <div className="border-2 border-mainColor text-mainColor flex items-center gap-2 md:px-4 md:py-2 px-3 py-1 capitalize">
                         <FaGithub />
                         <button>{val.code}</button>
                       </div>

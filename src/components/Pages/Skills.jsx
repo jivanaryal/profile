@@ -51,7 +51,7 @@ const Miscellaneous = [
 
 const Skills = () => {
   return (
-    <div className="min-h-screen py-60">
+    <div className="min-h-screen md:py-52 py-36">
       <div>
         <h1 className="md:text-7xl text-5xl text-center">Skills</h1>
         <div className="flex flex-col flex-nowrap gap-10 pt-10">
