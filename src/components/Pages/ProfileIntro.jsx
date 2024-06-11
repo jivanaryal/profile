@@ -2,7 +2,7 @@ import Rhombus from "../design/Rhombus";
 
 const ProfileIntro = () => {
   return (
-    <div className="md:grid  md:grid-cols-12 min-h-screen pt-20 text-[1.5rem] md:gap-4 gap-10">
+    <div className="md:grid  md:grid-cols-12 min-h-screen pt-20 md:text-[1.5rem] text-[1rem] md:gap-4 gap-10">
       <div className="col-span-7  flex flex-col gap-3">
         <p className="text-[#a19292ee]">Hello! I am</p>
         <h1>Jivan Aryal</h1>

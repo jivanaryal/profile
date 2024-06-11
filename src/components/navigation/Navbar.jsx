@@ -53,7 +53,7 @@ const Navbar = ({ show, sidebar, setSideBar }) => {
         </div>
       </div>
       <div
-        className="absolute right-10 top-5 text-3xl"
+        className="absolute right-4 top-5 text-3xl"
         onClick={() => {
           setSideBar(!sidebar);
         }}

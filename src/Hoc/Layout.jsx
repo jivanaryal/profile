@@ -36,7 +36,7 @@ const Layout = () => {
             <div>
               <Navbar show={show} sidebar={sidebar} setSideBar={setSideBar} />
             </div>
-            <div className="w-[90%] mx-auto">
+            <div className="w-[88%] mx-auto">
               <Outlet />
             </div>
           </div>

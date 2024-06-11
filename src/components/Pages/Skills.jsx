@@ -53,10 +53,10 @@ const Skills = () => {
   return (
     <div className="min-h-screen py-60">
       <div>
-        <h1 className="text-7xl text-center">Skills</h1>
+        <h1 className="md:text-7xl text-5xl text-center">Skills</h1>
         <div className="flex flex-col flex-nowrap gap-10 pt-10">
           <div className="flex flex-col gap-3">
-            <h1 className="text-4xl">FrontEnd</h1>
+            <h1 className="md:text-4xl text-3xl">FrontEnd</h1>
             <div className="flex  flex-wrap gap-4">
               {FrontendData.map((val, i) => {
                 return (
@@ -68,7 +68,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="flex flex-col flex-nowrap gap-4">
-            <h1 className="text-4xl">Backend and Database</h1>
+            <h1 className="md:text-4xl text-3xl">Backend and Database</h1>
             <div className="flex flex-wrap gap-4">
               {backendData.map((val, i) => {
                 return (
@@ -80,7 +80,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <h1 className="text-4xl">Miscellaneous</h1>
+            <h1 className="md:text-4xl text-3xl">Miscellaneous</h1>
             <div className="flex flex-wrap gap-4">
               {Miscellaneous.map((val, i) => {
                 return (

@@ -13,7 +13,6 @@
 }
 
 .rhombus-front {
-    
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(80deg);
@@ -37,17 +36,40 @@
 .profile {
     transform: rotate(-90deg);
     position: relative;
-    left:23px;
+    left: 23px;
     width: 180px;
-    /* Adjust the width as needed */
     height: 300px;
-    /* Adjust the height as needed */
     overflow: hidden;
-    /* Ensure the image stays within the rhombus */
 }
 
 .profile-image {
     width: 100%;
     height: 100%;
+}
 
+@media (max-width: 992px) {
+
+    /* Adjust the max-width as needed for medium screens */
+    .container {
+        width: 250px;
+        /* 100px smaller */
+        height: 250px;
+        /* 100px smaller */
+    }
+
+    .rhombus {
+        width: 250px;
+        /* 100px smaller */
+        height: 250px;
+        /* 100px smaller */
+    }
+
+    .profile {
+        left: 23px;
+        /* Adjust if necessary */
+        width: 130px;
+        /* Adjust the width if needed */
+        height: 200px;
+        /* Adjust the height if needed */
+    }
 }

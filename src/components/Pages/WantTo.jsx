@@ -43,26 +43,28 @@ const WantTo = () => {
   return (
     <div className="min-h-screen">
       <div>
-        <h1 className="text-7xl text-center">Wants To</h1>
+        <h1 className="md:text-7xl text-5xl text-center">Wants To</h1>
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-10 pt-20">
           {ContactDetails.map((val, i) => {
             return (
               <div key={i} className="flex flex-col gap-6">
-                <div className="text-center text-4xl text-mainColor">
+                <div className="text-center md:text-4xl text-3xl text-mainColor">
                   {val.title}
                 </div>
-                <div className="text-[1.2rem] ">{val.description}</div>
+                <div className="md:text-[1.2rem] text-[1rem] ">
+                  {val.description}
+                </div>
               </div>
             );
           })}
         </div>
-        <div className="     flex justify-center mr-10 pt-10  gap-10 mt-8 md:mt-10 ml-4 md:ml-32">
+        <div className="     flex justify-center mr-10 pt-10  md:gap-4 gap-2 mt-8 md:mt-10 ml-4 md:ml-32">
           {logos.map((val, i) => {
             return (
               <Link to={val.path} key={i}>
                 <div
-                  className={`border-2 rounded-full text-white hover:text-mainColor hover:shadow-md hover:shadow-mainColor transition-all delay-100 duration-200 p-3  shadow-2xl border-transparent text-4xl `}
+                  className={`border-2 rounded-full text-white hover:text-mainColor hover:shadow-md hover:shadow-mainColor transition-all delay-100 duration-200 p-3  shadow-2xl border-transparent md:text-4xl text-2xl `}
                 >
                   {val.logo}
                 </div>

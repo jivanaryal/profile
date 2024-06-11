@@ -81,18 +81,20 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-20 ">
       <div>
         <h1 className="text-7xl text-center">Projects</h1>
         <div className="flex flex-col gap-16">
           {ProjectData.map((val, i) => {
             return (
-              <div key={i} className="grid grid-cols-12 gap-10 pt-24">
-                <div className="left-image md:col-span-6 col-span-full w-full max-h-[250px] min-h-[300px]">
-                  <img src={val.image} alt="" className="h-full" />
+              <div key={i} className="md:grid  md:grid-cols-12 gap-10 pt-24">
+                <div className="left-image md:col-span-6 col-span-full w-full bg-red-500 max-h-[300px] md:mb-2 mb-6 ">
+                  <img src={val.image} alt="" className="h-full w-full" />
                 </div>
-                <div className="right flex flex-col gap-4 md:col-span-6 col-span-full text-[1.5rem] ">
-                  <div className="text-4xl capitalize">{val.header}</div>
+                <div className="right flex flex-col gap-4 md:col-span-6 col-span-full md:text-[1.5rem] text-[1rem] ">
+                  <div className="md:text-4xl text-3xl capitalize">
+                    {val.header}
+                  </div>
                   <div className="flex items-center">
                     <span className="text-[#A9BBD3]"> Made With: </span>
                     <span className="text-mainColor capitalize">

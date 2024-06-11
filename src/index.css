@@ -2,18 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-    /* max-width: 100vw; */
-background-color: #0a192f;
-/* background-color: red; */
-
-/* border: 2px solid black;
- */
-   overflow-x: hidden;
+    background-color: #0a192f;
+    overflow-x: hidden;
     color: #ffffff;
     font-style: normal;
-    font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .left-image {
@@ -21,7 +15,6 @@ background-color: #0a192f;
     box-shadow: 0 0 20px 1px #4D79FF;
     border-radius: 1rem;
     overflow: hidden;
-    /* max-height: 500px; */
 }
 
 .skill-button {
@@ -31,10 +24,17 @@ background-color: #0a192f;
     font-size: 1.2rem;
     background-color: #223247;
     border-radius: 5%;
-  
+}
 
-}.skill-button:hover{
+.skill-button:hover {
     transform: scale(1.05);
     transition: all ease-in-out 300ms;
-     
+}
+
+
+@media (max-width: 800px) {
+
+  .skill-button{
+     font-size: 1rem;
+  }
 }

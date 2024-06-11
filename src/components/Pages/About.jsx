@@ -1,21 +1,21 @@
-import myPhoto from "../../assets//images/jivan.jpg"; // Replace with the actual path to your photo
+import myPhoto from "../../assets/images/jivan.jpg"; // Replace with the actual path to your photo
 
 const About = () => {
   return (
     <section className="min-h-screen text-white my-16">
-      <h1 className=" text-center text-7xl">About Me</h1>
-      <div className=" mx-auto px-6">
-        <div className="grid grid-cols-12 gap-10 pt-24 ">
-          <div className="border-mainColor border-4 w-fit mx-auto md:col-span-5 col-span-full  md:max-h-[500px] max-h-[300px]">
+      <h1 className=" text-center md:text-7xl text-5xl">About Me</h1>
+      <div className="  px-6">
+        <div className="md:grid md:grid-cols-12 gap-10 pt-24 ">
+          <div className="border-mainColor border-4 w-fit md:ml-0 ml-10 md:col-span-5 col-span-full  md:max-h-[500px] max-h-[300px] overflow-auto mb-6">
             <img
               src={myPhoto}
               alt="Jivan Aryal"
               className="rounded-lg  h-full transform transition-transform duration-500 hover:scale-105"
             />
           </div>
-          <div className="right flex flex-col  items-center  justify-center gap-4 md:col-span-6 col-span-full w-full text-[1.5rem]">
-            <h2 className="text-4xl font-bold mb-4">About Me</h2>
-            <p className="text-lg mb-4">
+          <div className=" flex flex-col  gap-4 md:col-span-6 col-span-full  md:text-[1.5rem] text-[1rem]">
+            <h2 className="text-3xl font-bold mb-4 text-center">About Me</h2>
+            <p className="justify-start mb-4">
               Hello, I'm <span className="font-semibold">Jivan Aryal</span>. I'm
               a dedicated Software Engineer with expertise in the MERN stack. I
               create dynamic web applications using MongoDB, Express.js, React,
