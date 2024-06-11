@@ -45,7 +45,7 @@ const WantTo = () => {
       <div>
         <h1 className="text-7xl text-center">Wants To</h1>
 
-        <div className="grid grid-cols-3 gap-10 pt-20">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-10 pt-20">
           {ContactDetails.map((val, i) => {
             return (
               <div key={i} className="flex flex-col gap-6">

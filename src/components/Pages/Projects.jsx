@@ -88,10 +88,10 @@ const Projects = () => {
           {ProjectData.map((val, i) => {
             return (
               <div key={i} className="grid grid-cols-12 gap-10 pt-24">
-                <div className="left-image col-span-6 w-full max-h-[300px] min-h-[300px]">
-                  <img src={val.image} alt="" className="" />
+                <div className="left-image md:col-span-6 col-span-full w-full max-h-[250px] min-h-[300px]">
+                  <img src={val.image} alt="" className="h-full" />
                 </div>
-                <div className="right flex flex-col gap-4 col-span-6 text-[1.5rem] ">
+                <div className="right flex flex-col gap-4 md:col-span-6 col-span-full text-[1.5rem] ">
                   <div className="text-4xl capitalize">{val.header}</div>
                   <div className="flex items-center">
                     <span className="text-[#A9BBD3]"> Made With: </span>

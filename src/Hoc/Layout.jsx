@@ -29,14 +29,14 @@ const Layout = () => {
         </div>
       ) : (
         <div>
-          <div className="fixed bottom-[178px]">
+          <div className="fixed bottom-[178px] md:block hidden">
             <SocialSite />
           </div>
-          <div className="w-[87%] mx-auto">
+          <div className="w-full mx-auto">
             <div>
               <Navbar show={show} sidebar={sidebar} setSideBar={setSideBar} />
             </div>
-            <div>
+            <div className="w-[90%] mx-auto">
               <Outlet />
             </div>
           </div>

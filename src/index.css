@@ -4,15 +4,14 @@
 
 
 body {
-    max-width: 100vw;
+    /* max-width: 100vw; */
 background-color: #0a192f;
-border: 2px solid black;
+/* background-color: red; */
+
+/* border: 2px solid black;
+ */
+   overflow-x: hidden;
     color: #ffffff;
-    /* font-family: __Quicksand_8abeb8, __Quicksand_Fallback_8abeb8;
-     */
-    /* text color #e3e8f9 */
-    /* higlighted text color 255 255 255 1
-    font-size: 30px; */
     font-style: normal;
     font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
@@ -21,7 +20,8 @@ border: 2px solid black;
     border: 4px solid #4D79FF;
     box-shadow: 0 0 20px 1px #4D79FF;
     border-radius: 1rem;
-        overflow: hidden;
+    overflow: hidden;
+    /* max-height: 500px; */
 }
 
 .skill-button {
