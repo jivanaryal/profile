@@ -54,12 +54,12 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, x: -50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.4 } },
 };
 
 const iconVariants = {
   hidden: { opacity: 0, scale: 0 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.4 } },
 };
 
 const WantTo = () => {
