@@ -25,15 +25,15 @@ const Sidebar = ({ sidebar, setSideBar }) => {
     },
     {
       name: "projects",
-      value: 1600,
+      value: 1580,
     },
     {
       name: "skills",
-      value: 5390,
+      value: 5370,
     },
     {
       name: "contact",
-      value: 6100,
+      value: 6000,
     },
     {
       name: "resume",
