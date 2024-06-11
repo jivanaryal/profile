@@ -29,6 +29,7 @@ const Navbar = ({ show, sidebar, setSideBar }) => {
   const CursorPointer = (value) => {
     window.scrollTo({ behavior: "smooth", top: value });
   };
+
   return (
     <div className="pt-6 w-[90%] mx-auto">
       <div className="flex  items-center gap-32 w-full">
@@ -42,7 +43,7 @@ const Navbar = ({ show, sidebar, setSideBar }) => {
                 <div
                   className={`${
                     show ? "hidden" : "visible"
-                  } capitalize text-xl cursor-pointer`}
+                  } capitalize text-[1.5rem] cursor-pointer`}
                   onClick={() => CursorPointer(val.value)}
                 >
                   {val.name}

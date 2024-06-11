@@ -1,12 +1,13 @@
+import React from "react";
+import { RiLiveLine } from "react-icons/ri";
+import { FaGithub } from "react-icons/fa6";
+import { motion } from "framer-motion";
 import amazon from "../../assets/images/amazon.png";
 import colorib from "../../assets/images/colorib.png";
 import hubit from "../../assets/images/hubit.png";
 import portfolio from "../../assets/images/oldport.png";
 import employeeManagement from "../../assets/images/cms.jpeg";
 import employeeDashboard from "../../assets/images/ems.jpeg";
-import { RiLiveLine } from "react-icons/ri";
-import { FaGithub } from "react-icons/fa6";
-// import { Link } from "react-router-dom";
 
 const Projects = () => {
   const ProjectData = [
@@ -80,16 +81,27 @@ const Projects = () => {
       gitpath: "https://github.com/jivanaryal/portfolio",
     },
   ];
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.2, delay: 0.05 } }, // faster animation
+  };
+
   return (
-    <div className="min-h-screen pt-20 ">
+    <div className="min-h-screen pt-20">
       <div>
         <h1 className="md:text-7xl text-5xl text-center">Projects</h1>
         <div className="flex flex-col md:gap-14 gap-4">
           {ProjectData.map((val, i) => {
             return (
-              <div
+              <motion.div
                 key={i}
                 className="md:grid  md:grid-cols-12 md:gap-10 gap-4 pt-24"
+                custom={i}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={cardVariants}
               >
                 <div className="left-image md:col-span-6 col-span-full w-full bg-red-500 max-h-[300px] md:mb-2 mb-6 ">
                   <img src={val.image} alt="" className="h-full w-full" />
@@ -135,7 +147,7 @@ const Projects = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
