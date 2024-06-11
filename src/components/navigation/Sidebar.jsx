@@ -21,7 +21,7 @@ const Sidebar = ({ sidebar, setSideBar }) => {
   const NavData = [
     {
       name: "about",
-      value: 800,
+      value: 790,
     },
     {
       name: "projects",
@@ -29,11 +29,11 @@ const Sidebar = ({ sidebar, setSideBar }) => {
     },
     {
       name: "skills",
-      value: 5200,
+      value: 5390,
     },
     {
       name: "contact",
-      value: 6000,
+      value: 6100,
     },
     {
       name: "resume",
