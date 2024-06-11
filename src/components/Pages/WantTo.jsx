@@ -76,7 +76,7 @@ const WantTo = () => {
   return (
     <div className="min-h-screen">
       <div>
-        <h1 className="md:text-7xl text-5xl text-center">Wants To</h1>
+        <h1 className="md:text-7xl text-4xl font-bold text-center">Wants To</h1>
 
         <motion.div
           className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-8 md:pt-20 pt-10"
@@ -91,7 +91,7 @@ const WantTo = () => {
               className="flex flex-col gap-6"
               variants={itemVariants}
             >
-              <div className="text-center md:text-4xl text-3xl text-mainColor">
+              <div className="text-center md:text-4xl text-2xl text-mainColor">
                 {val.title}
               </div>
               <div className="md:text-[1.2rem] text-[1rem]">

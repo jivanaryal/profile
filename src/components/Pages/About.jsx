@@ -10,8 +10,8 @@ const About = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.8,
-        delay: 0.3,
+        duration: 0.6,
+        delay: 0.2,
         staggerChildren: 0.2,
       },
     },
@@ -22,7 +22,7 @@ const About = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.4 },
+      transition: { duration: 0.3 },
     },
   };
 
@@ -33,14 +33,14 @@ const About = () => {
 
   return (
     <motion.section
-      className="min-h-screen text-white md:my-16 my-4"
+      className="min-h-screen text-white md:my-10 my-4"
       initial="hidden"
       animate={sectionInView ? "visible" : "hidden"}
       variants={containerVariants}
       ref={sectionRef}
     >
       <motion.h1
-        className="text-center md:text-7xl text-5xl"
+        className="text-center md:text-7xl text-4xl font-bold"
         variants={itemVariants}
       >
         About Me

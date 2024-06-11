@@ -49,10 +49,10 @@ const Skills = () => {
   return (
     <div className="min-h-screen md:py-52 py-36">
       <div>
-        <h1 className="md:text-7xl text-5xl text-center">Skills</h1>
+        <h1 className="md:text-7xl text-4xl font-bold text-center">Skills</h1>
         <div className="flex flex-col flex-nowrap gap-10 pt-10">
           <div className="flex flex-col gap-3" ref={frontendRef}>
-            <h1 className="md:text-4xl text-3xl">FrontEnd</h1>
+            <h1 className="md:text-4xl text-2xl">FrontEnd</h1>
             <div className="flex flex-wrap gap-4">
               {FrontendData.map((val, i) => (
                 <motion.div
@@ -68,7 +68,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="flex flex-col flex-nowrap gap-4" ref={backendRef}>
-            <h1 className="md:text-4xl text-3xl">Backend and Database</h1>
+            <h1 className="md:text-4xl text-2xl">Backend and Database</h1>
             <div className="flex flex-wrap gap-4">
               {backendData.map((val, i) => (
                 <motion.div
@@ -84,7 +84,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4" ref={miscRef}>
-            <h1 className="md:text-4xl text-3xl">Miscellaneous</h1>
+            <h1 className="md:text-4xl text-2xl">Miscellaneous</h1>
             <div className="flex flex-wrap gap-4">
               {Miscellaneous.map((val, i) => (
                 <motion.div

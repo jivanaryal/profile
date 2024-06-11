@@ -84,13 +84,13 @@ const Projects = () => {
 
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.2 } }, // faster animation
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.1 } }, // faster animation
   };
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen md:pt-20 pt-10 ">
       <div>
-        <h1 className="md:text-7xl text-5xl text-center">Projects</h1>
+        <h1 className="md:text-7xl text-4xl font-bold text-center">Projects</h1>
         <div className="flex flex-col md:gap-14 gap-4">
           {ProjectData.map((val, i) => {
             return (
@@ -107,7 +107,7 @@ const Projects = () => {
                   <img src={val.image} alt="" className="h-full w-full" />
                 </div>
                 <div className="right flex flex-col md:gap-4 gap-2 md:col-span-6 col-span-full md:text-[1.5rem] text-[1rem] ">
-                  <div className="md:text-4xl text-3xl capitalize">
+                  <div className="md:text-4xl text-2xl capitalize">
                     {val.header}
                   </div>
                   <div className="flex items-center">
