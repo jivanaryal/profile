@@ -29,31 +29,7 @@ body {
 .skill-button:hover {
     transform: scale(1.05);
     transition: all ease-in-out 300ms;
-}
-
-.link-with-after {
-    position: relative;
-    display: inline-block;
-    text-transform: capitalize;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.link-with-after::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 2px;
-    background-color: rgba(77, 121, 255, 0);
-    transition: background-color ease-in-out 0.3s;
-}
-
-.link-with-after:hover::after {
-    background-color: rgba(77, 121, 255, 0.6);
-    /* Semi-transparent color on hover */
-}
+}   
 
 
 @media (max-width: 800px) {
