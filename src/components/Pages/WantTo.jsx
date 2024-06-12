@@ -87,7 +87,7 @@ const WantTo = () => {
           {ContactDetails.map((val, i) => (
             <motion.div
               key={i}
-              className="flex flex-col gap-6  border-[1px] border-gray-800 shadow-md shadow-gray-700 outline-none p-4 "
+              className="flex flex-col gap-6  border-[1px] border-gray-800 rounded bg-[#0d192e] shadow-md shadow-gray-700 outline-none p-4 "
               variants={itemVariants}
             >
               <div className="text-center lg:text-4xl text-2xl text-mainColor">

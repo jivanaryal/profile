@@ -107,14 +107,14 @@ const Projects = () => {
             return (
               <motion.div
                 key={i}
-                className="md:grid  border-[1px] border-gray-800 shadow-md shadow-gray-700 outline-none p-4 mt-10 md:grid-cols-12 md:gap-10 gap-4 md:pt-12 pt-10"
+                className="md:grid  border-[1px] border-gray-800 shadow-md shadow-gray-700 bg-[#0d192e] outline-none p-4 mt-10 md:grid-cols-12 md:gap-10 gap-4 md:pt-12 pt-10"
                 custom={i}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={cardVariants}
               >
-                <div className="left-image md:col-span-6 col-span-full w-full bg-red-500 max-h-[300px] md:mb-2 mb-6 ">
+                <div className="left-image md:col-span-6 col-span-full w-full  max-h-[300px] md:mb-2 mb-6 ">
                   <img src={val.image} alt="" className="h-full w-full" />
                 </div>
                 <div className="right flex flex-col md:gap-4 gap-2 md:col-span-6 col-span-full lg:text-[1.5rem] text-[1rem] ">

@@ -28,11 +28,11 @@ const Sidebar = ({ sidebar, setSideBar }) => {
     },
     {
       name: "skills",
-      value: 5400,
+      value: 6200,
     },
     {
       name: "contact",
-      value: 6100,
+      value: 6900,
     },
     {
       name: "resume",
