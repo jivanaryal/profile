@@ -90,13 +90,13 @@ const Projects = () => {
   return (
     <div className="min-h-screen md:pt-20 pt-10 ">
       <div>
-        <h1 className="md:text-7xl text-4xl font-bold text-center">Projects</h1>
+        <h1 className="lg:text-7xl text-4xl font-bold text-center">Projects</h1>
         <div className="flex flex-col md:gap-14 gap-4">
           {ProjectData.map((val, i) => {
             return (
               <motion.div
                 key={i}
-                className="md:grid  md:grid-cols-12 md:gap-10 gap-4 pt-24"
+                className="md:grid  md:grid-cols-12 md:gap-10 gap-4 md:pt-12 pt-10"
                 custom={i}
                 initial="hidden"
                 whileInView="visible"
@@ -106,8 +106,8 @@ const Projects = () => {
                 <div className="left-image md:col-span-6 col-span-full w-full bg-red-500 max-h-[300px] md:mb-2 mb-6 ">
                   <img src={val.image} alt="" className="h-full w-full" />
                 </div>
-                <div className="right flex flex-col md:gap-4 gap-2 md:col-span-6 col-span-full md:text-[1.5rem] text-[1rem] ">
-                  <div className="md:text-4xl text-2xl capitalize">
+                <div className="right flex flex-col md:gap-4 gap-2 md:col-span-6 col-span-full lg:text-[1.5rem] text-[1rem] ">
+                  <div className="lg:text-4xl text-2xl capitalize">
                     {val.header}
                   </div>
                   <div className="flex items-center">
@@ -124,7 +124,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                     >
                       {" "}
-                      <div className="border-2 border-mainColor md:text-lg text-base text-mainColor flex items-center gap-2 md:px-4 md:py-2 px-3 py-1 capitalize">
+                      <div className="border-2 border-mainColor lg:text-lg text-base text-mainColor flex items-center gap-2 lg:px-4 lg:py-2 px-3 py-1 capitalize">
                         <RiLiveLine />
                         <button
                           className={`${
@@ -140,7 +140,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <div className="border-2 border-mainColor text-mainColor flex items-center gap-2 md:px-4 md:py-2 px-3 py-1 capitalize">
+                      <div className="border-2 border-mainColor text-mainColor flex items-center gap-2 lg:px-4 lg:py-2 px-3 py-1 capitalize">
                         <FaGithub />
                         <button>{val.code}</button>
                       </div>

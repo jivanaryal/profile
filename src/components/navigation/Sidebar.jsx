@@ -6,16 +6,16 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 const Sidebar = ({ sidebar, setSideBar }) => {
   const socialSites = [
     {
-      icon: <MdOutlineMail />,
-      link: "mailto:your.email@example.com",
+      images: <MdOutlineMail />,
+      links: "mailto:jeevanaryal7947@gmail.com",
     },
     {
-      icon: <FaLinkedin />,
-      link: "https://www.linkedin.com/in/your-linkedin-profile/",
+      images: <FaLinkedin />,
+      links: "https://www.linkedin.com/in/jivan-aryal/",
     },
     {
-      icon: <FaGithub />,
-      link: "https://github.com/your-github-profile/",
+      images: <FaGithub />,
+      links: "https://www.github.com/jivanaryal/",
     },
   ];
   const NavData = [
@@ -29,7 +29,7 @@ const Sidebar = ({ sidebar, setSideBar }) => {
     },
     {
       name: "skills",
-      value: 5370,
+      value: 5260,
     },
     {
       name: "contact",
@@ -41,11 +41,14 @@ const Sidebar = ({ sidebar, setSideBar }) => {
     },
   ];
 
-  const CursorPointer = (value) => {
-    setTimeout(() => {
-      window.scrollTo({ behavior: "smooth", top: value });
-    }, 400);
-
+  const CursorPointer = (value, name) => {
+    if (name === "resume") {
+      window.open("/resume.pdf", "_blank");
+    } else {
+      setTimeout(() => {
+        window.scrollTo({ behavior: "smooth", top: value });
+      }, 400);
+    }
     setSideBar(!sidebar);
     console.log("hello");
   };
@@ -61,9 +64,9 @@ const Sidebar = ({ sidebar, setSideBar }) => {
         return (
           <motion.div
             key={i}
-            className="cursor-pointer mb-10  h-full mt-10  text-white p-4  rounded-md shadow-md relative border-2 w-64 ml-[-25px] capitalize py-3 text-center text-xl border-gray-600 rounded-md"
+            className="cursor-pointer mb-2  h-full mt-8  text-white p-4  border-mainColor shadow-md relative border-2 w-64 ml-[-25px] capitalize py-3 text-center text-xl  rounded-md"
             onClick={() => {
-              CursorPointer(val.value);
+              CursorPointer(val.value, val.name);
             }}
             variants={itemVariants}
             whileHover={{ scale: 1.1 }}
@@ -75,17 +78,18 @@ const Sidebar = ({ sidebar, setSideBar }) => {
       })}
 
       <div className="flex items-center gap-5 mt-20  ">
-        <hr className="w-5/12 border-b-4" />
+        <hr className="w-5/12 border-b-4 border-b-mainColor" />
         <div className="flex items-center">
           {socialSites.map((val, i) => {
             return (
-              <div key={i} className="text-4xl p-2">
-                {val.icon}
-              </div>
+              <a href={val.links} key={i}>
+                {" "}
+                <div className="text-4xl p-2">{val.images}</div>
+              </a>
             );
           })}
         </div>
-        <hr className="w-5/12 border-b-4 " />
+        <hr className="w-5/12 border-b-4 border-b-mainColor" />
       </div>
     </motion.div>
   );

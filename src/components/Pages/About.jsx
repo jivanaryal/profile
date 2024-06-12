@@ -25,14 +25,14 @@ const About = () => {
 
   return (
     <motion.section
-      className="min-h-screen text-white md:my-10 my-4"
+      className="min-h-screen text-white md:my-10 my-7 mt-20"
       initial="hidden"
       animate={sectionInView ? "visible" : "hidden"}
       variants={containerVariants}
       ref={sectionRef}
     >
       <motion.h1
-        className="text-center md:text-7xl text-4xl font-bold"
+        className="text-center lg:text-7xl text-4xl font-bold"
         variants={itemVariants}
       >
         About Me
@@ -52,18 +52,18 @@ const About = () => {
           className="flex flex-col gap-4 md:col-span-6 col-span-full md:text-[1.5rem] text-[1rem]"
           variants={itemVariants}
         >
-          <p className="justify-start md:text-lg text-base mb-0">
+          <p className="justify-start lg:text-xl text-[1.1rem] mb-0">
             Hello, I'm <span className="font-semibold">Jivan Aryal</span>. I'm a
             dedicated Software Engineer with expertise in the MERN stack. I
             create dynamic web applications using MongoDB, Express.js, React,
             and Node.js.
           </p>
-          <p className="md:text-lg text-base mb-4">
+          <p className="md:text-xl text-[1.1rem] mb-4">
             I also have basic skills in figma, Canva and Photoshop for graphic
             design. I'm passionate about exploring new technologies and
             contributing to open-source projects.
           </p>
-          <p className="md:text-lg text-base">
+          <p className="lg:text-xl text-[1.1rem]">
             I'm open to exciting opportunities and collaborations. Connect with
             me on{" "}
             <a
