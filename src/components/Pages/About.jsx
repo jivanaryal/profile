@@ -30,6 +30,7 @@ const About = () => {
       animate={sectionInView ? "visible" : "hidden"}
       variants={containerVariants}
       ref={sectionRef}
+      id="about"
     >
       <motion.h1
         className="text-center lg:text-7xl text-4xl font-bold"
@@ -37,9 +38,9 @@ const About = () => {
       >
         About Me
       </motion.h1>
-      <div className="px-6 md:grid md:grid-cols-12 gap-10 md:pt-24 pt-10">
+      <div className=" md:grid md:grid-cols-12 gap-10 md:pt-24 pt-10">
         <motion.div
-          className="border-mainColor border-4 w-fit md:ml-0 ml-1 md:col-span-5 col-span-full md:max-h-[500px] overflow-hidden max-h-[300px] mb-6"
+          className="border-mainColor border-4 w-fit  md:col-span-5 col-span-full md:max-h-[500px] overflow-hidden max-h-[300px] mb-6"
           variants={itemVariants}
         >
           <img

@@ -29,11 +29,11 @@ const Sidebar = ({ sidebar, setSideBar }) => {
     },
     {
       name: "skills",
-      value: 5260,
+      value: 5500,
     },
     {
       name: "contact",
-      value: 6000,
+      value: 6400,
     },
     {
       name: "resume",
@@ -59,7 +59,7 @@ const Sidebar = ({ sidebar, setSideBar }) => {
   };
 
   return (
-    <motion.div className="" initial="hidden" animate="visible">
+    <motion.div className="mt-32" initial="hidden" animate="visible">
       {NavData.map((val, i) => {
         return (
           <motion.div

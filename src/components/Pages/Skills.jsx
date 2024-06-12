@@ -51,7 +51,7 @@ const Skills = () => {
   });
 
   return (
-    <div className="min-h-screen md:py-52 py-36">
+    <div className="min-h-screen md:py-52 py-32" id="skills">
       <div>
         <h1 className="lg:text-7xl text-4xl font-bold text-center">Skills</h1>
         <div className="flex flex-col flex-nowrap gap-10 pt-10">

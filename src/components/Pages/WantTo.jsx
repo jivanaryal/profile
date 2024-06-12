@@ -74,12 +74,12 @@ const WantTo = () => {
   });
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen" id="contact">
       <div>
         <h1 className="lg:text-7xl text-4xl font-bold text-center">Wants To</h1>
 
         <motion.div
-          className="grid lg:grid-cols-3 items-center md:grid-cols-2 grid-cols-1 md:gap-10 gap-8 md:pt-20 pt-10"
+          className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 md:gap-10 gap-8 md:pt-20 pt-10"
           ref={containerRef}
           variants={containerVariants}
           initial="hidden"
@@ -88,7 +88,7 @@ const WantTo = () => {
           {ContactDetails.map((val, i) => (
             <motion.div
               key={i}
-              className="flex flex-col gap-6"
+              className="flex flex-col gap-6  border-[1px] border-gray-800 shadow-md shadow-gray-700 outline-none p-4 "
               variants={itemVariants}
             >
               <div className="text-center lg:text-4xl text-2xl text-mainColor">

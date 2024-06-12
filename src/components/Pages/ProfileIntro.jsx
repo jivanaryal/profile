@@ -21,12 +21,13 @@ const ProfileIntro = () => {
 
   return (
     <motion.div
-      className="md:grid md:grid-cols-12 min-h-screen md:pt-20 pt-10 md:text-[1.5rem] text-[1rem] md:gap-4 gap-10"
+      className="md:grid md:grid-cols-12 lg:mt-32 md:mt-28  mt-20 min-h-screen md:pt-20 pt-10 md:text-[1.5rem] text-[1rem] md:gap-4 gap-10"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
+      id="profile"
     >
-      <motion.div className="col-span-7  flex flex-col gap-3">
+      <motion.div className="col-span-7 flex flex-col gap-3">
         <p className="text-[#a19292ee] text-lg">Hello! I am</p>
         <h1 className="text-3xl md:text-4xl">Jivan Aryal</h1>
         <h2 className="text-2xl md:text-3xl text-mainColor">

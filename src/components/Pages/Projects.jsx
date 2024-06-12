@@ -88,7 +88,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="min-h-screen md:pt-20 pt-10 ">
+    <div className="min-h-screen md:pt-20 pt-10  " id="projects">
       <div>
         <h1 className="lg:text-7xl text-4xl font-bold text-center">Projects</h1>
         <div className="flex flex-col md:gap-14 gap-4">
@@ -96,7 +96,7 @@ const Projects = () => {
             return (
               <motion.div
                 key={i}
-                className="md:grid  md:grid-cols-12 md:gap-10 gap-4 md:pt-12 pt-10"
+                className="md:grid  border-[1px] border-gray-800 shadow-md shadow-gray-700 outline-none p-4 mt-10 md:grid-cols-12 md:gap-10 gap-4 md:pt-12 pt-10"
                 custom={i}
                 initial="hidden"
                 whileInView="visible"
@@ -124,11 +124,12 @@ const Projects = () => {
                       rel="noopener noreferrer"
                     >
                       {" "}
-                      <div className="border-2 border-mainColor lg:text-lg text-base text-mainColor flex items-center gap-2 lg:px-4 lg:py-2 px-3 py-1 capitalize">
+                      <div className="border-2  rounded hover:shadow-md hover:shadow-mainColor border-mainColor lg:text-lg text-base text-mainColor flex items-center gap-2 lg:px-4 lg:py-2 px-3 py-1  capitalize">
                         <RiLiveLine />
                         <button
                           className={`${
-                            val.livepath === null && "line-through cursor-none"
+                            val.livepath === null &&
+                            "line-through cursor-none hover:shadow-transparent hover:shadow-none"
                           }`}
                         >
                           {val.buttons}
@@ -140,7 +141,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <div className="border-2 border-mainColor text-mainColor flex items-center gap-2 lg:px-4 lg:py-2 px-3 py-1 capitalize">
+                      <div className="border-2 border-mainColor text-mainColor lg:text-lg text-base  flex items-center gap-2 lg:px-4 lg:py-2 px-3 py-1 rounded hover:shadow-md hover:shadow-mainColor capitalize">
                         <FaGithub />
                         <button>{val.code}</button>
                       </div>
