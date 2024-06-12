@@ -1,4 +1,3 @@
-import React from "react";
 import { AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebook, FaGithub } from "react-icons/fa6";
 import { Link } from "react-router-dom";

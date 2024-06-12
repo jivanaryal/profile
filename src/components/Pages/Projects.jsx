@@ -1,4 +1,3 @@
-import React from "react";
 import { RiLiveLine } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa6";
 import { motion } from "framer-motion";

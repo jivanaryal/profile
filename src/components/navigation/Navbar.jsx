@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../../assets/images/logo.png";
 import { VscMenu } from "react-icons/vsc";
 // import resume from "../../../public/resume.pdf";

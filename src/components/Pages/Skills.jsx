@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FaFigma, FaGitAlt, FaHtml5 } from "react-icons/fa";
