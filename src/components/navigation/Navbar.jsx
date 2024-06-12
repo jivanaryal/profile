@@ -51,7 +51,7 @@ const Navbar = ({ show, sidebar, setSideBar }) => {
     } else {
       const location = document.querySelector(target).offsetTop;
       console.log(location);
-      window.scrollTo({ behavior: "smooth", top: location - 30 });
+      window.scrollTo({ behavior: "smooth", top: location - 60 });
     }
   };
 
@@ -75,7 +75,7 @@ const Navbar = ({ show, sidebar, setSideBar }) => {
                   onClick={handleClick}
                   className={`${
                     show ? "hidden" : "visible"
-                  } capitalize text-[1.5rem] cursor-pointer`}
+                  } capitalize text-[1.5rem] cursor-pointer link-with-after `}
                 >
                   {val.name}
                 </a>

@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { MdOutlineMail } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
@@ -21,7 +20,7 @@ const Sidebar = ({ sidebar, setSideBar }) => {
   const NavData = [
     {
       name: "about",
-      value: 790,
+      value: 750,
     },
     {
       name: "projects",
@@ -29,11 +28,11 @@ const Sidebar = ({ sidebar, setSideBar }) => {
     },
     {
       name: "skills",
-      value: 5500,
+      value: 5400,
     },
     {
       name: "contact",
-      value: 6400,
+      value: 6100,
     },
     {
       name: "resume",

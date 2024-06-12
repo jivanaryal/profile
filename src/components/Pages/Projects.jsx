@@ -8,6 +8,7 @@ import hubit from "../../assets/images/hubit.png";
 import portfolio from "../../assets/images/oldport.png";
 import employeeManagement from "../../assets/images/cms.jpeg";
 import employeeDashboard from "../../assets/images/ems.jpeg";
+import ecommerce from "../../assets/images/ecommerce.png";
 
 const Projects = () => {
   const ProjectData = [
@@ -33,6 +34,17 @@ const Projects = () => {
       code: "code",
       livepath: null,
       gitpath: "https://github.com/jivanaryal/ems_cms",
+    },
+    {
+      image: ecommerce,
+      header: "Ecommerce Website",
+      made: "React, npm packages, CSS, JavaScript",
+      intro:
+        "This E-commerce website showcases a variety of products with beautiful animations and filtering options. Users can easily browse products, add them to their cart, and make purchases. Built with a React frontend and enhanced with various npm packages, the site provides a seamless and engaging shopping experience.",
+      buttons: "live",
+      code: "code",
+      livepath: "https://jivan-ecommerce.netlify.app/",
+      gitpath: "https://github.com/jivanaryal/Ecommerce",
     },
 
     {
@@ -88,7 +100,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="min-h-screen md:pt-20 pt-10  " id="projects">
+    <div className="min-h-screen  md:pt-20 pt-10  " id="projects">
       <div>
         <h1 className="lg:text-7xl text-4xl font-bold text-center">Projects</h1>
         <div className="flex flex-col md:gap-14 gap-4">

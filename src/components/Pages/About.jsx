@@ -25,7 +25,7 @@ const About = () => {
 
   return (
     <motion.section
-      className="min-h-screen text-white md:my-10 my-7 mt-20"
+      className="min-h-screen  text-white md:pt-20 pt-10   mx-auto"
       initial="hidden"
       animate={sectionInView ? "visible" : "hidden"}
       variants={containerVariants}
@@ -40,7 +40,7 @@ const About = () => {
       </motion.h1>
       <div className=" md:grid md:grid-cols-12 gap-10 md:pt-24 pt-10">
         <motion.div
-          className="border-mainColor border-4 w-fit  md:col-span-5 col-span-full md:max-h-[500px] overflow-hidden max-h-[300px] mb-6"
+          className="border-mainColor border-4 w-10/12 mx-auto  md:col-span-5 col-span-full md:max-h-[500px] overflow-hidden max-h-[300px] mb-6"
           variants={itemVariants}
         >
           <img
