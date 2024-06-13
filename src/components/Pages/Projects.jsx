@@ -19,8 +19,7 @@ const Projects = () => {
         "This project is an Amazon clone, a fully functional e-commerce platform built using React and TypeScript. It features a responsive design, user authentication, product listings, a shopping cart, and a checkout process. The application is powered by Vite for a fast development environment and styled using CSS.",
       buttons: "live",
       code: "code",
-      livepath:
-        "https://653c798a7a555000071af97b--jivan-amazonclone.netlify.app/",
+      livepath: "https://jivan-amazonclone.netlify.app/",
       gitpath: "https://github.com/jivanaryal/AmazonSiteClone",
     },
     {
