@@ -101,7 +101,7 @@ const Projects = () => {
     <div className="min-h-screen  md:pt-20 pt-10  " id="projects">
       <div>
         <h1 className="lg:text-7xl text-4xl font-bold text-center">Projects</h1>
-        <div className="flex flex-col md:gap-24 gap-4 md:mx-4 mx-2">
+        <div className="flex flex-col md:gap-24 gap-4 md:mx-4 mx-0">
           {ProjectData.map((val, i) => {
             return (
               <motion.div

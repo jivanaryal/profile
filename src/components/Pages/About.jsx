@@ -24,7 +24,7 @@ const About = () => {
 
   return (
     <motion.section
-      className="min-h-screen  text-white pt-8   mx-auto"
+      className="min-h-screen  text-white md:pt-8  pt-20   mx-auto"
       initial="hidden"
       animate={sectionInView ? "visible" : "hidden"}
       variants={containerVariants}
