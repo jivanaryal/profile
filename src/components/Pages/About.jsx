@@ -53,7 +53,7 @@ const About = () => {
           variants={itemVariants}
         >
           <p className="justify-start lg:text-xl text-[1.1rem] mb-0">
-            Hello, I'm <span className="font-semibold">Jivan Aryal</span>. I'm a
+            Hello, I'm <span className="font-semibold">Jivan Aryal</span>. I am a
             dedicated Software Engineer with expertise in the MERN stack. I
             create dynamic web applications using MongoDB, Express.js, React,
             and Node.js.
