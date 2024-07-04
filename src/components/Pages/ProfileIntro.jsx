@@ -20,7 +20,7 @@ const ProfileIntro = () => {
 
   return (
     <motion.div
-      className="md:grid  md:grid-cols-12 lg:mt-32 md:mt-28  mt-20 min-h-[90vh] md:pt-20 pt-10 md:text-[1.5rem] text-[1rem] md:gap-4 gap-10"
+      className="md:grid  md:grid-cols-12 lg:mt-32 md:mt-28  my-20 max-h-screen md:pt-20 pt-10 md:text-[1.5rem] text-[1rem] md:gap-4 gap-10"
       variants={containerVariants}
       initial="hidden"
       animate="visible"

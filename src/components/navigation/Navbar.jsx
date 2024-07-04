@@ -28,7 +28,7 @@ const Navbar = ({ show, sidebar, setSideBar }) => {
     },
     {
       name: "resume",
-      url: "#resume",
+      url: null,
       value: null, // No scroll value for resume
     },
   ];

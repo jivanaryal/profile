@@ -24,7 +24,7 @@ const About = () => {
 
   return (
     <motion.section
-      className="min-h-screen  text-white md:pt-8  pt-20   mx-auto"
+      className=" my-10  text-white md:pt-8  pt-20   mx-auto"
       initial="hidden"
       animate={sectionInView ? "visible" : "hidden"}
       variants={containerVariants}
@@ -53,8 +53,8 @@ const About = () => {
           variants={itemVariants}
         >
           <p className="justify-start lg:text-xl text-[1.1rem] mb-0">
-            Hello, I am <span className="font-semibold">Jivan Aryal</span>. I am a
-            dedicated Software Engineer with expertise in the MERN stack. I
+            Hello, I am <span className="font-semibold">Jivan Aryal</span>. I am
+            a dedicated Software Engineer with expertise in the MERN stack. I
             create dynamic web applications using MongoDB, Express.js, React,
             and Node.js.
           </p>

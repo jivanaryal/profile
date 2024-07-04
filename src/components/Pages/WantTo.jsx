@@ -73,7 +73,7 @@ const WantTo = () => {
   });
 
   return (
-    <div className="min-h-screen md:pt-20 pt-10 " id="contact">
+    <div className=" my-20 md:pt-20 pt-10 " id="contact">
       <div>
         <h1 className="lg:text-7xl text-4xl font-bold text-center">Wants To</h1>
 

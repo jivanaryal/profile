@@ -42,7 +42,7 @@ const Sidebar = ({ sidebar, setSideBar }) => {
 
   const CursorPointer = (value, name) => {
     if (name === "resume") {
-      window.open("/resume.pdf", "_blank");
+      // window.open("/resume.pdf", "_blank");
     } else {
       setTimeout(() => {
         window.scrollTo({ behavior: "smooth", top: value });
