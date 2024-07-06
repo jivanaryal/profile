@@ -2,12 +2,14 @@ Introduction
 This is a personal portfolio website built using React, Vite, TailwindCSS, and standard CSS. It showcases my skills, projects, and contact information.
 
 Features
-Responsive Design: Works on all screen sizes.
-Projects Section: Display your projects with images, descriptions, and links.
-About Me Section: A brief introduction about yourself.
-Contact Form: Allow visitors to send you messages.
-skills Section: (Optional) Write and display your skills.
+1. Responsive Design: Works on all screen sizes.
+2. Projects Section: Display your projects with images, descriptions, and links.
+3. About Me Section: A brief introduction about yourself.
+4. Contact Form: Allow visitors to send you messages.
+5. skills Section: (Optional) Write and display your skills.
+   
 Tech Stack
+
 React: A JavaScript library for building user interfaces.
 Vite: A fast build tool and development server.
 TailwindCSS: A utility-first CSS framework.
