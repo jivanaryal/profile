@@ -3,18 +3,19 @@ import { useInView } from "react-intersection-observer";
 import myPhoto from "../../assets/images/jivan.jpg";
 
 const About = () => {
+  // Animation Variants
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, delay: 0.2, staggerChildren: 0.2 },
+      transition: { duration: 0.6, delay: 0.2, staggerChildren: 0.3 },
     },
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
   };
 
   const { ref: sectionRef, inView: sectionInView } = useInView({
@@ -24,51 +25,63 @@ const About = () => {
 
   return (
     <motion.section
-      className=" my-10  text-white md:pt-8  pt-20   mx-auto"
+      className="text-white "
       initial="hidden"
       animate={sectionInView ? "visible" : "hidden"}
       variants={containerVariants}
       ref={sectionRef}
       id="about"
     >
+      {/* Animated Heading */}
       <motion.h1
-        className="text-center lg:text-7xl text-4xl font-bold mb-10"
+        className="text-center mt-10 text-4xl md:text-6xl font-extrabold mb-10 ext-transparent animate-gradient"
         variants={itemVariants}
       >
         About Me
       </motion.h1>
-      <div className=" md:grid md:grid-cols-12 gap-10 md:px-8 px-4 py-6 md:mt-14 border-2 bg-[#0d192e] border-[#101e30] rounded shadow-lg shadow-gray-700">
+
+      {/* Content Container */}
+      <div className="md:grid md:grid-cols-12 gap-10 bg-[#0d192e] p-8 rounded-lg shadow-lg shadow-indigo-700 border border-[#101e30] transform transition-transform duration-500 hover:scale-105">
+        {/* Profile Image */}
         <motion.div
-          className="border-mainColor border-4 w-full mx-auto  md:col-span-4 col-span-full md:max-h-[500px] overflow-hidden max-h-[300px] mb-6"
+          className="md:col-span-4 col-span-full w-full h-full overflow-hidden rounded-lg shadow-lg shadow-blue-600"
           variants={itemVariants}
         >
           <img
             src={myPhoto}
             alt="Jivan Aryal"
-            className="rounded-lg h-full w-full transform transition-transform duration-500 hover:scale-105"
+            className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-110 hover:rotate-3"
           />
         </motion.div>
+
+        {/* About Text */}
         <motion.div
-          className="flex flex-col gap-4 md:col-span-6 col-span-full md:text-[1.5rem] text-[1rem]"
+          className="md:col-span-8 col-span-full flex flex-col gap-6 text-lg"
           variants={itemVariants}
         >
-          <p className="justify-start lg:text-xl text-[1.1rem] mb-0">
-            Hello, I am <span className="font-semibold">Jivan Aryal</span>. I am
-            a dedicated Software Engineer with expertise in the MERN stack. I
-            create dynamic web applications using MongoDB, Express.js, React,
-            and Node.js.
+          <p className="text-white">
+            Hello, I am{" "}
+            <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">
+              Jivan Aryal
+            </span>
+            . I am a dedicated Software Engineer with expertise in the MERN
+            stack. I create dynamic web applications using MongoDB, Express.js,
+            React, and Node.js.
           </p>
-          <p className="md:text-xl text-[1.1rem] mb-4">
-            I also have basic skills in figma, Canva and Photoshop for graphic
-            design. I'm passionate about exploring new technologies and
-            contributing to open-source projects.
+          <p className="text-gray-300">
+            I also have experience with design tools like Figma, Canva, and
+            Photoshop, which helps me bring ideas to life visually. I’m
+            passionate about exploring new technologies and contributing to
+            open-source projects.
           </p>
-          <p className="lg:text-xl text-[1.1rem]">
+          <p className="text-gray-300">
             I'm open to exciting opportunities and collaborations. Connect with
             me on{" "}
             <a
               href="https://www.linkedin.com/in/jivan-aryal/"
-              className="text-blue-500"
+              className="text-blue-400 font-medium underline"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               LinkedIn
             </a>
