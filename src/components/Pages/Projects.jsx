@@ -21,7 +21,7 @@ const Projects = () => {
       header: "Employee Content Management System",
       made: "React, Node.js, Express.js, mySQL, CSS",
       intro:
-        "The Employee Content Management System is a comprehensive platform for managing departments, employees, tasks, task reports, and leave requests. Built with a React frontend and a Node.js/Express backend, it uses mySQL for data storage and is styled with CSS for a modern look.",
+        "The Employee Content Management System is a comprehensive platform for managing departments, employees, tasks, task reports, and leave requests.",
       fullIntro:
         "The Employee Content Management System is a comprehensive platform for managing departments, employees, tasks, task reports, and leave requests. Built with a React frontend and a Node.js/Express backend, it uses mySQL for data storage and is styled with CSS for a modern look. This system allows efficient task management and reporting, streamlining employee tasks.",
       livepath: null,
@@ -65,7 +65,7 @@ const Projects = () => {
       header: "Colorib Blog Site",
       made: "TypeScript, Svelte, CSS",
       intro:
-        "Colorib is a modern blog site built using TypeScript and Svelte. This platform allows users to explore various categories such as Food, Technology, Business, and Popular Courses.",
+        "Colorib is a modern blog site built using TypeScript and Svelte. This platform allows users to explore various categories.",
       fullIntro:
         "Colorib is a modern blog site built using TypeScript and Svelte. This platform allows users to explore various categories such as Food, Technology, Business, and Popular Courses. With a clean and responsive design, Colorib provides an engaging reading experience and easy navigation across different topics.",
       livepath: "https://jivan-blog.netlify.app/",
