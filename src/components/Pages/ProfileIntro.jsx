@@ -39,6 +39,7 @@ const ProfileIntro = () => {
           explore and get in touch with me if you have any inquiries or
           collaboration opportunities.
         </p>
+        <h1>jivan aryal</h1>
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white md:text-xl text-base mt-3 py-2 px-4  w-fit rounded"
           onClick={openResume}
