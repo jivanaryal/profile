@@ -131,15 +131,22 @@ const Projects = () => {
   const toggleShowMore = (index) => {
     setShowMore((prev) => ({ ...prev, [index]: !prev[index] }));
   };
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+  };
 
   return (
     <div
       className="min-h-screen pt-20 bg-gradient-to-r animate-gradient-move text-white"
       id="projects"
     >
-      <h1 className="lg:text-7xl text-4xl font-bold text-center mb-12 text-white">
+      <motion.h1
+        className="text-center pt-6 text-4xl md:text-6xl font-extrabold pb-10 ext-transparent animate-gradient"
+        variants={itemVariants}
+      >
         Projects
-      </h1>
+      </motion.h1>
       <div className="flex flex-col md:gap-16 gap-8  ">
         {ProjectData.map((val, i) => (
           <motion.div
