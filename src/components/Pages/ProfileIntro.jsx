@@ -91,11 +91,11 @@ const ProfileIntro = () => {
 
       {/* Image Container with Animated Circular Border */}
       <motion.div
-        className="md:col-span-5 flex items-center justify-center mx-auto md:mt-0 md:my-32 my-10 rounded-full p-4 shadow-2xl bg-gradient-radial from-purple-700 via-sky-600 to-indigo-600"
+        className="md:col-span-5 hover:translate-x-6 flex items-center justify-center mx-auto md:mt-0 md:my-32 my-10 rounded-full p-4 shadow-2xl bg-gradient-radial from-purple-700 via-sky-600 to-indigo-600"
         variants={imageVariants}
       >
         <motion.div
-          className="relative w-64 h-64 lg:w-96 lg:h-96 md:w-80 md:h-80 rounded-full overflow-hidden bg-[#0d192e] p-4 shadow-lg transition-all duration-300 hover:shadow-xl"
+          className="relative hover:rotate-12 hover:bg-inherit hover:-backdrop-hue-rotate-30 hover:skew-x-2 hover:skew-y-3  delay-200  hover:translate-x-6 hover:animate-pulse w-64 h-64 lg:w-96 lg:h-96 md:w-80 md:h-80 rounded-full overflow-hidden bg-[#0d192e] p-4 shadow-lg transition-all duration-300 hover:shadow-xl"
           initial="hidden"
           animate="visible"
         >

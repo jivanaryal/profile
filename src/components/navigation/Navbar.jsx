@@ -74,7 +74,7 @@ const Navbar = ({ show, sidebar, setSideBar }) => {
                   onClick={handleClick}
                   className={`${
                     show ? "hidden" : "visible"
-                  } capitalize text-[1.5rem] cursor-pointer`}
+                  } capitalize text-[1.5rem] cursor-pointer hover:text-blue-500 md:border-b-none hover:border-b-2 hover:border-b-blue-500`}
                 >
                   {val.name}
                 </a>

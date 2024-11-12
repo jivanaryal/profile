@@ -68,7 +68,7 @@ const About = () => {
             stack. I create dynamic web applications using MongoDB, Express.js,
             React, and Node.js.
           </p>
-          <p className="text-gray-300">
+          <p className="text-gray-300 md:visible hidden">
             I also have experience with design tools like Figma, Canva, and
             Photoshop, which helps me bring ideas to life visually. I’m
             passionate about exploring new technologies and contributing to
