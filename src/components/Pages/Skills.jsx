@@ -50,7 +50,7 @@ const Skills = () => {
   });
 
   return (
-    <div className=" my-20  md:pt-32 pt-28" id="skills">
+    <div className=" my-10  md:pt-20 pt-20" id="skills">
       <div>
         <h1 className="lg:text-7xl text-4xl font-bold text-center">Skills</h1>
         <div className="flex flex-col flex-nowrap gap-10 pt-10">

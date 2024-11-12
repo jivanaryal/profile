@@ -140,7 +140,7 @@ const Projects = () => {
       <h1 className="lg:text-7xl text-4xl font-bold text-center mb-12 text-white">
         Projects
       </h1>
-      <div className="flex flex-col md:gap-16 gap-8 md:mx-12 mx-4">
+      <div className="flex flex-col md:gap-16 gap-8  ">
         {ProjectData.map((val, i) => (
           <motion.div
             key={i}
@@ -157,10 +157,12 @@ const Projects = () => {
                 className="rounded-md shadow-lg h-full w-full object-cover"
               />
             </motion.div>
-            <motion.div className="flex flex-col gap-4 col-span-7">
-              <h2 className="text-3xl font-semibold">{val.header}</h2>
-              <p className="text-gray-400">{val.made}</p>
-              <p className="text-lg text-gray-300 mt-2">
+            <motion.div className="flex flex-col gap-2 col-span-7">
+              <h2 className="md:text-3xl sm:text-2xl mt-4 font-semibold">
+                {val.header}
+              </h2>
+              <p className="text-gray-400 text-xs font-semibold">{val.made}</p>
+              <p className="text-sm text-gray-300 mt-2">
                 {showMore[i] ? val.fullIntro : val.intro}
               </p>
               <button
@@ -170,18 +172,18 @@ const Projects = () => {
                 {showMore[i] ? "Show Less" : "Show More"}
               </button>
             </motion.div>
-            <div className="absolute  bottom-7 left-7 flex gap-8">
+            <div className="absolute  bottom-4 left-7 flex gap-4">
               {val.livepath ? (
                 <a
                   href={val.livepath}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-xl text-blue-400 hover:text-white transition-colors"
+                  className="text-2xl text-blue-400 border-2 rounded-full p-2 border-blue-400 hover:text-white transition-colors"
                 >
                   <RiLiveLine />
                 </a>
               ) : (
-                <span className="text-xl text-gray-500">
+                <span className="text-2xl border-2 p-2 border-none text-gray-500">
                   <RiLiveLine />
                 </span>
               )}
@@ -189,7 +191,7 @@ const Projects = () => {
                 href={val.gitpath}
                 target="_blank"
                 rel="noreferrer"
-                className="text-xl text-gray-400 hover:text-white transition-colors"
+                className="text-2xl border-2 rounded-full p-2 border-blue-400 text-gray-400 hover:text-white transition-colors"
               >
                 <FaGithub />
               </a>

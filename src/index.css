@@ -39,7 +39,7 @@ body {
   }
 }
 
-@keyframes gradient-move {
+/* @keyframes gradient-move {
   0% {
     background-position: 0% 50%;
   }
@@ -49,14 +49,14 @@ body {
   100% {
     background-position: 0% 50%;
   }
-}
+} */
 
-.animate-gradient-move {
-  animation: gradient-move 8s ease infinite;
-  background-size: 200% 200%;
-}
+/* .animate-gradient-move {
+    animation: gradient-move 8s ease infinite;
+    background-size: 200% 200%;
+    } */
 
-@keyframes gradient-shift {
+/* @keyframes gradient-shift {
   0% {
     background-position: 0% 50%;
   }
@@ -70,4 +70,4 @@ body {
 .animated-gradient-text {
   background-size: 200% 200%;
   animation: gradient-shift 5s ease infinite;
-}
+} */

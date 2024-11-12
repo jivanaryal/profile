@@ -42,7 +42,7 @@ const ProfileIntro = () => {
 
   // Open Resume function
   const openResume = () => {
-    window.open("/resume.pdf", "_blank");
+    // window.open("/resume.pdf", "_blank");
   };
 
   return (
@@ -91,16 +91,18 @@ const ProfileIntro = () => {
 
       {/* Image Container with Animated Circular Border */}
       <motion.div
-        className="md:col-span-5 flex items-center justify-center mx-auto md:mt-0 md:my-20 my-10 rounded-full p-2 bg-gradient-to-br from-sky-600 via-indigo-600 to-purple-600 shadow-lg"
+        className="md:col-span-5 flex items-center justify-center mx-auto md:mt-0 md:my-32 my-10 rounded-full p-4 shadow-2xl bg-gradient-radial from-purple-700 via-sky-600 to-indigo-600"
         variants={imageVariants}
       >
         <motion.div
-          className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-[#0d192e] p-2"
-          variants={borderAnimation}
+          className="relative w-64 h-64 lg:w-96 lg:h-96 md:w-80 md:h-80 rounded-full overflow-hidden bg-[#0d192e] p-4 shadow-lg transition-all duration-300 hover:shadow-xl"
           initial="hidden"
           animate="visible"
         >
-          <div className="absolute inset-0 rounded-full border-4 border-[#00BFFF] animate-spin-slow" />
+          {/* Border Animation */}
+          <div className="absolute inset-0 rounded-full border-8 border-[#00BFFF] border-opacity-80 animate-pulse" />
+
+          {/* Inner Image */}
           <Rhombus className="w-full h-full transform scale-110 opacity-90 transition-transform duration-500 hover:scale-100" />
         </motion.div>
       </motion.div>
