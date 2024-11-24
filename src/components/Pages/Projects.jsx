@@ -20,7 +20,7 @@ const Projects = () => {
     {
       image: ekinum,
       header: "Ekinum Website",
-      made: "React, Node.js, Express.js, MySQL, Tailwind CSS",
+      made: "React, Node.js, Express.js, MongoDB, Tailwind CSS",
       intro:
         "Ekinum is a website for buying subscription items, game-related diamonds, UC, and gift cards.",
       fullIntro:
