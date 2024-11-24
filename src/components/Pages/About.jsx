@@ -37,7 +37,7 @@ const About = () => {
         className="text-center pt-6 text-4xl md:text-6xl font-extrabold pb-10 ext-transparent animate-gradient"
         variants={itemVariants}
       >
-        About Mes
+        About Me
       </motion.h1>
 
       {/* Content Container */}
