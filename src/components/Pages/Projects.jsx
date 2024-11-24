@@ -10,33 +10,34 @@ import employeeDashboard from "../../assets/images/ems.jpeg";
 import ecommerce from "../../assets/images/ecommerce.png";
 import clothingStore from "../../assets/images/clothStore.png";
 import colleges from "../../assets/images/colleges.png";
+import ekinum from "../../assets/images/ekinum.png";
 import { useState } from "react";
 
 const Projects = () => {
   const [showMore, setShowMore] = useState({});
-
+  
   const ProjectData = [
+    {
+      image: ekinum,
+      header: "Ekinum Website",
+      made: "React, Node.js, Express.js, MySQL, Tailwind CSS",
+      intro:
+        "Ekinum is a website for buying subscription items, game-related diamonds, UC, and gift cards.",
+      fullIntro:
+        "Ekinum is a modern e-commerce platform built using React for the frontend, Node.js/Express for the backend, and MySQL for database management. Users can browse and purchase a variety of subscription-based items, including game-related diamonds, UC, and gift cards. The platform is styled with Tailwind CSS to ensure a responsive and user-friendly design.",
+      livepath: "https://www.ekinum.com/",
+      gitpath: null
+    },
     {
       image: employeeManagement,
       header: "Employee Content Management System",
       made: "React, Node.js, Express.js, mySQL, CSS",
       intro:
-        "The Employee Content Management System is a comprehensive platform for managing departments, employees, tasks, task reports, and leave requests.",
+      "The Employee Content Management System is a comprehensive platform for managing departments, employees, tasks, task reports, and leave requests.",
       fullIntro:
-        "The Employee Content Management System is a comprehensive platform for managing departments, employees, tasks, task reports, and leave requests. Built with a React frontend and a Node.js/Express backend, it uses mySQL for data storage and is styled with CSS for a modern look. This system allows efficient task management and reporting, streamlining employee tasks.",
+      "The Employee Content Management System is a comprehensive platform for managing departments, employees, tasks, task reports, and leave requests. Built with a React frontend and a Node.js/Express backend, it uses mySQL for data storage and is styled with CSS for a modern look. This system allows efficient task management and reporting, streamlining employee tasks.",
       livepath: null,
       gitpath: "https://github.com/jivanaryal/ems_cms",
-    },
-    {
-      image: colleges,
-      header: "College Recommendation System",
-      made: "React, Node.js, Express.js, SQL, Tailwind CSS",
-      intro:
-        "The College Recommendation System helps students find colleges that best match their preferences based on factors like location, major, tuition, and acceptance rate.",
-      fullIntro:
-        "The College Recommendation System helps students find colleges that best match their preferences based on factors like location, major, tuition, and acceptance rate. Built with a React frontend and a Node.js/Express backend, it provides a clean, user-friendly interface styled with Tailwind CSS. SQL is used to manage a robust database of colleges, and the system recommends colleges through efficient querying and filtering techniques.",
-      livepath: null,
-      gitpath: "https://github.com/jivanaryal/college-project",
     },
     {
       image: ecommerce,
@@ -50,20 +51,21 @@ const Projects = () => {
       gitpath: "https://github.com/jivanaryal/Ecommerce",
     },
     {
-      image: amazon,
-      header: "Amazon Clone",
-      made: "React, TypeScript, Vite, CSS",
+      image: colleges,
+      header: "College Recommendation System",
+      made: "React, Node.js, Express.js, SQL, Tailwind CSS",
       intro:
-        "This project is an Amazon clone, a fully functional e-commerce platform built using React and TypeScript.",
+        "The College Recommendation System helps students find colleges that best match their preferences based on factors like location, courses, rating.",
       fullIntro:
-        "This project is an Amazon clone, a fully functional e-commerce platform built using React and TypeScript. It features a responsive design, user authentication, product listings, a shopping cart, and a checkout process. The application is powered by Vite for a fast development environment and styled using CSS.",
-      livepath: "https://jivan-amazonclone.netlify.app/",
-      gitpath: "https://github.com/jivanaryal/AmazonSiteClone",
+        "The College Recommendation System helps students find colleges that best match their preferences based on factors like location, courses, rating, and recommend college. Built with a React frontend and a Node.js/Express backend, it provides a clean, user-friendly interface styled with Tailwind CSS. SQL is used to manage a robust database of colleges, and the system recommends colleges through efficient querying and filtering techniques.",
+      livepath: null,
+      gitpath: "https://github.com/jivanaryal/college-project",
     },
+   
     {
       image: colorib,
       header: "Colorib Blog Site",
-      made: "TypeScript, Svelte, CSS",
+      made: "React, NodeJs, CSS",
       intro:
         "Colorib is a modern blog site built using TypeScript and Svelte. This platform allows users to explore various categories.",
       fullIntro:
@@ -93,30 +95,8 @@ const Projects = () => {
       livepath: null,
       gitpath: "https://github.com/jivanaryal/online-clothing-store",
     },
-    {
-      image: hubit,
-      header: "Hubit Institute Site",
-      made: "React, CSS, Figma",
-      intro:
-        "The Hubit Institute site is designed to help students explore different courses, view class schedules, and contact the institute.",
-      fullIntro:
-        "The Hubit Institute site is designed to help students explore different courses, view class schedules, and contact the institute. Built with React for a dynamic user interface, styled with CSS for a modern look, and prototyped in Figma, this site provides an intuitive and engaging experience for students and staff.",
-      livepath: "https://hubitclone.netlify.app/",
-      gitpath: "https://github.com/jivanaryal/hubitclone",
-    },
-    {
-      image: portfolio,
-      header: "Personal Portfolio",
-      made: "React, CSS",
-      intro:
-        "This is my personal portfolio site hosted on Netlify. It showcases my skills, projects, and personal information.",
-      fullIntro:
-        "This is my personal portfolio site hosted on Netlify. It showcases my skills, projects, and personal information using React.js, CSS, and various packages. The site features a clean, modern design and provides detailed information about my work and experience.",
-      livepath: "https://jivanaryal.netlify.app/",
-      gitpath: "https://github.com/jivanaryal/portfolio",
-    },
   ];
-
+  
   const cardVariants = {
     hidden: { opacity: 0, scale: 0.9, rotate: -5, y: 50 },
     visible: {

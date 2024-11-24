@@ -41,7 +41,7 @@ const About = () => {
       </motion.h1>
 
       {/* Content Container */}
-      <div className="md:grid p-10 md:grid-cols-12 gap-10 bg-[#0d192e]  rounded-lg shadow-lg shadow-indigo-700 border border-[#101e30] transform transition-transform duration-500 hover:scale-[1.003]">
+      <div className="md:grid    md:grid-cols-12 gap-10 bg-[#0d192e]  rounded-lg shadow-lg shadow-indigo-700 border border-[#101e30] transform transition-transform duration-500 hover:scale-[1.003]">
         {/* Profile Image */}
         <motion.div
           className="md:col-span-4 mb-4 col-span-full w-full h-full overflow-hidden rounded-lg shadow-lg shadow-blue-600"
@@ -56,7 +56,7 @@ const About = () => {
 
         {/* About Text */}
         <motion.div
-          className="md:col-span-8 col-span-full flex flex-col gap-2 lg:text-xl text-lg"
+          className="md:col-span-8 p-3 col-span-full flex flex-col gap-2 lg:text-xl text-lg"
           variants={itemVariants}
         >
           <p className="text-white">
@@ -68,7 +68,7 @@ const About = () => {
             stack. I create dynamic web applications using MongoDB, Express.js,
             React, and Node.js.
           </p>
-          <p className="text-gray-300 md:visible hidden">
+          <p className="text-gray-300 md:block hidden">
             I also have experience with design tools like Figma, Canva, and
             Photoshop, which helps me bring ideas to life visually. I’m
             passionate about exploring new technologies and contributing to
